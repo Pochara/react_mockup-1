@@ -1,0 +1,407 @@
+/* The Modal (background) */
+.divinline{
+  color:#0096a9; display:inline-block;
+}
+.totalsum{
+  display:inline-block; float:right; margin-right:100px;
+}
+.morepromise{
+  display:inline-block; width:83%; vertical-align: middle;
+}
+.morepromisehr{
+  border:0.5px solid #D7DADA;
+}
+.logobottom{
+  width:50px; height:35px; vertical-align: text-top; margin-right:5px;
+}
+.iconright{
+  font-size:25px; color:#778b96; margin-right:30px;
+}
+.modal-container {
+  position: relative;
+  width:;
+}
+.selectpage1{
+  margin-left: 5px;border-right: 0px;
+}
+.width100{
+  width:100%;
+}
+.none{
+  display: none
+}
+.imagetab{
+  width:22px; height:22px; vertical-align: text-top; margin-right:5px;
+}
+.logo{
+  width:100px; height:30px; vertical-align: text-top; margin-right:5px;
+}
+.line{
+  border-bottom: 2.5px solid black; width:60%;  margin-bottom:18px; 
+}
+.calendar{
+  font-size:15px; margin-left:15px;
+}
+.aligncenter{
+  text-align:center;
+}
+.EQTOP{
+  text-align:center; margin-top:0px;
+}
+.eqlogo{
+  width:110px; height:35px; vertical-align: text-top; margin-right:5px; margin-top: 5px; margin-bottom:0px;
+}
+.divshowbtn{
+	margin-top: 500px;
+	text-align: center;
+}
+.header{
+    position:relative;
+   	left:0px;
+   	top:0px;
+   	height:55px;
+   	width:100%;
+   	background:#032a39;
+}
+.iconsearch{
+	font-size: 20px;
+}
+.headerTab{
+	cursor: pointer;
+	margin-top: 15px;
+	height: 68%;
+	margin-right: 15px;
+	display: inline-block;
+}
+.headerActive{
+	color:#6e895b;
+	border-bottom: 4px solid #3C7E89;
+}
+.headerLeft{
+	margin-top: 14px;
+	margin-left:20px;
+	display: inline-block;
+}
+.headerRight{
+	display: inline-block;
+	font-weight: bold;
+	height: 100%;
+	position: absolute;
+	color:white;
+	font-size: 15px;
+	right: 80px;
+}
+.EQ{
+	position: relative;
+	margin-top:0px;
+	height: 130px;
+	width: 100%;
+	background-color: #F7F7F7;
+}
+.EQbtn1{
+	border:0px;
+	width: 15%;
+  margin-right: 10px;
+	background-color: #0095a9;
+	color:white;
+	display: inline-block;
+  	font-size: 15px;
+    padding: 10px 5px 12px 5px;
+ }
+ .EQbtn2{
+	border:0px;
+ 	width: 15%;
+  margin-left: 10px;
+	background-color: #d4d611;
+	color:white;
+	display: inline-block;
+  	font-size: 15px;
+    padding: 10px 5px 12px 5px;
+ }
+ .EQSearch{
+ 	display:inline-block; 
+ 	width:65%; 
+ 	border:1px solid #D5D5D5; 
+ 	background-color:white;
+ }
+textarea:focus, input:focus{
+    outline: none;
+}
+ .input{
+ 	display: inline-block;
+ 	width: 67%;
+ 	font-size: 15px;
+ 	height: 40px;
+ 	border: 0px;
+ 	margin-left: 5px;
+ 	border-right: 1px solid #ddd;
+ }
+  .input2{
+ 	display: inline-block;
+ 	width: 18%;
+ 	font-size: 15px;
+ 	height: 40px;
+ 	border: 0px;
+ 	margin-left: 10px;
+ }
+
+.showbtn{
+  	font-size: 20px;
+  	padding: 10px 45px 10px 45px;
+}
+.testscroll{
+	margin-top: 1000px;
+}
+.footer{	
+    position: relative;
+    display: inline-block;
+   	left:0px;
+   	bottom:0px;
+   	height:50px;
+   	width:100%;
+   	background:#032a39;
+}
+.footerLeft{
+	display: inline-block;
+	position: absolute;
+	margin-top:15px;
+	margin-left: 30px;
+	color:white;
+	font-size: 14px;
+}
+.footerRight{
+	position: absolute;
+	right:25px;
+	top:15px;
+}
+.footerCenter{
+	position: relative;
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 2560px) {
+
+body { font-family: 'THNiramitAS', sans-serif; background-color: blue; margin:0px;} 
+
+table{
+     border-collapse: collapse; 
+}
+tr.border_bottom td {
+  border-bottom:1pt solid #D7DADA;
+}
+tr.border_bottom2 td {
+
+  border-bottom:1pt solid #D7DADA;
+}
+td.page1{
+    width:60%;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+td.page1M{
+    width:40%;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+td.pageMchild{
+    color:#0096a9;
+    width: 50%;
+    padding-left: 13px;
+    font-size: 13px;
+    padding-top: 0px;
+    padding-bottom: 2px;  
+}
+td.pageM{
+    width: 50%;
+    padding-left: 13px;
+    font-size: 13px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+td.page2{
+    width: 25%;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+}
+.center{
+	width: 100%;
+    padding-left: 15px;
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.wrapper {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    position:relative;
+    bottom:0;
+}
+
+
+.head {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.information{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+.selecthead {
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 80%;
+    background-color: #FFFFFF;
+}
+
+.select{
+    border:1px solid #0096a9;
+    width: 49%;
+    text-align: center;
+    float: left;
+}
+.select a {
+    cursor: pointer;
+    display: block;
+    color: #0096a9;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.select a:hover:not(.active) {
+    color:#FFFFFF;
+    background-color: #0096a9;
+}
+
+.tab a {
+    font-weight: 700;
+    display: block;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.tab a:hover:not(.active) {
+    background-color: #FFFFFF;
+}
+.tab{
+    cursor: pointer;
+    width: 50%;
+    display: inline-block;
+}
+.total{
+	background-color:#5c5a5d; 
+	color:white; 
+	font-size:15px; 
+	padding-top:5px; 
+	padding-left:15px;
+}
+
+.active {
+    background-color: #EAEAEA;
+}
+.active2 a{
+    color:#FFFFFF!important;
+}
+.active2{
+    background-color: #0096a9;
+}
+.parent{
+  font-size: 0;
+    /* parent value */
+}
+
+.parent > div{
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+   /* some value */
+}
+.city{
+  min-height: 90%;
+  /* equal to footer height */
+  margin-bottom: -70px; 
+}
+.city2{
+  min-height: 90%;
+  /* equal to footer height */
+  margin-bottom: -80px; 
+}
+
+#information2{display:none;}
+.modal {
+    margin: 0;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-lg{
+
+  border: 1px solid #888;
+  margin: auto;
+  width: 65%;
+  height: 85%;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #FFFFFF;
+    margin: auto;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+  background: #0096a9;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 35px 8px 35px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0096a9;
+  text-decoration: none;
+}
+
+}
