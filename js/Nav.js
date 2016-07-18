@@ -30,6 +30,25 @@ class Nav extends Component{
 	    } 
 	}
 
+	active(e){
+		var home = document.getElementById('headerHome');
+		var equo = document.getElementById('headerEQUOT');
+		var eapp = document.getElementById('headerEAPP');
+		if(e.target.id == "headerHome"){
+			home.classList.add("highlight");
+			equo.classList.remove("highlight");
+			eapp.classList.remove("highlight");
+		}else if(e.target.id == "headerEQUOT"){
+			home.classList.remove("highlight");
+			equo.classList.add("highlight");
+			eapp.classList.remove("highlight");
+		}else if(e.target.id == "headerEAPP"){
+			home.classList.remove("highlight");
+			equo.classList.remove("highlight");
+			eapp.classList.add("highlight");
+		}
+	}
+
 render(){
         return (
 			<div className="header">
@@ -37,9 +56,9 @@ render(){
 						<img src="Image/tm-logo.png" className="logo"></img>
 					</div>
 			    	<div className="headerRight">
-			    		<div className="headerTab" id="headerHome">{this.state.home}</div>
-			    		<div className="headerTab" id="headerEQUOT">{this.state.equo}</div>
-			    		<div className="headerTab" id="headerEAPP">{this.state.eapp}</div>
+			    		<div className="headerTab" id="headerHome" onClick={this.active.bind(this)}>{this.state.home}</div>
+			    		<div className="headerTab highlight" id="headerEQUOT" onClick={this.active.bind(this)}>{this.state.equo}</div>
+			    		<div className="headerTab" id="headerEAPP" onClick={this.active.bind(this)}>{this.state.eapp}</div>
 			    		<div className="headerTab" id="headerLAN" onClick={this.languagechange.bind(this)}>{this.state.language}</div>
 			    	</div>
 			</div>

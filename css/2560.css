@@ -1,4 +1,8 @@
 /* The Modal (background) */
+.highlight{
+  color:green;
+  border-bottom:3px solid green;
+}
 .divinline{
   color:#0096a9; display:inline-block;
 }
