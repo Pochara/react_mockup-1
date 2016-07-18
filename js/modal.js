@@ -169,30 +169,59 @@ class Infopage2 extends Component{
 }
 
 class InfoTab2 extends Component{
+	constructor(props) {
+	    super(props);
+	   	this.state={
+	   			life: "",
+				life2: "",
+				insurance: "",
+				insurance2: "",
+				solution:"",
+				solution2:"",
+				ain:"",
+				ain2:"",
+				opd:"",
+				opd2:"",
+				wpd:"",
+				wpd2:"",
+				total:"",
+				alltotal:""
+	   	}
+	 }
 	componentDidMount() {
 		if(this.props.information === "1"){
 		  	this.setState({
-					title:"นางสาว",
-					name:"อาทิมา",
-					lastname:"อิทธิโรจนกุล",
-					paper:"บัตรประชาชน",
-					id:"9-999-999999x-xx-x",
-					otherpaper:"-",
-					status:"แต่งงานแล้ว",
-					weight:"80 กิโลกรัม",
-					height:"160 เซ็นติเมตร"
+					life: "1,000,000",
+					life2: "10,000",
+					insurance: "5,000,000",
+					insurance2: "2,200",
+					solution:"1,000,000",
+					solution2:"900,000",
+					ain:"250,000",
+					ain2:"2,000",
+					opd:"300,000",
+					opd2:"3,000",
+					wpd:"1,000,000",
+					wpd2:"0",
+					total:"15,200",
+					alltotal:"935,200"
 				})
 			}else{
 				this.setState({
-		   		title:"นาย",
-				name:"สมศักดิ์",
-				lastname:"สวนสวัสดิ์",
-				paper:"บัตรประชาชน",
-				id:"9-999-999999x-xx-x",
-				otherpaper:"-",
-				status:"โสด",
-				weight:"65 กิโลกรัม",
-				height:"175 เซ็นติเมตร"
+		   			life: "2,000,000",
+					life2: "20,000",
+					insurance: "7,000,000",
+					insurance2: "4,200",
+					solution:"2,000,000",
+					solution2:"500,000",
+					ain:"420,000",
+					ain2:"1,000",
+					opd:"420,000",
+					opd2:"2,000",
+					wpd:"2,000,000",
+					wpd2:"0",
+					total:"42,200",
+					alltotal:"1,404,200"
 		   		})
 			} 	
 		
@@ -208,18 +237,18 @@ class InfoTab2 extends Component{
 							  </tr>
 							  <tr className="Space">
 							    <td className="pageMchild">EN-N กรมธรรม์ประกันภัยแบบโฮล ไลฟ์พลัส 20ปี</td>
-							    <td className="page2">1,000,000</td>
-							    <td className="page2">10,000</td>
+							    <td className="page2">{this.state.life}</td>
+							    <td className="page2">{this.state.life2}</td>
 							  </tr>
 							  <tr className="Space">
 							    <td className="pageMchild">PA23 ประกันภัยอุบัติเหตุส่วนบุลคล</td>
-							    <td className="page2">5,000,000</td>
-							    <td className="page2">2,200</td>
+							    <td className="page2">{this.state.insurance}</td>
+							    <td className="page2">{this.state.insurance2}</td>
 							  </tr>
 							  <tr className="Space">
 							    <td className="pageMchild">โซลูชั่น ดีไซน์</td>
-							    <td className="page2">1,000,000</td>
-							    <td className="page2">900,000</td>
+							    <td className="page2">{this.state.solution}</td>
+							    <td className="page2">{this.state.solution2}</td>
 							  </tr>
 						</table>
 						<div className="center width100">
@@ -231,28 +260,28 @@ class InfoTab2 extends Component{
 						<table className="width100">
 							  <tr className="Space">
 							    <td className="pageM">AI-N อุบัติเหตุคุ้มครอง ชีวิต อวัยวะ ทุพพลภาพ</td>
-							    <td className="page2">250,000</td>
-							    <td className="page2">2,000</td>
+							    <td className="page2">{this.state.ain}</td>
+							    <td className="page2">{this.state.ain2}</td>
 							  </tr>
 							  <tr className="Space">
 							    <td className="pageM">OPD2 ค่ารักษาพยาบาลแบบผู้ป่วยนอก OPD</td>
-							    <td className="page2">300,000</td>
-							    <td className="page2">3,000</td>
+							    <td className="page2">{this.state.opd}</td>
+							    <td className="page2">{this.state.opd2}</td>
 							  </tr>
 							  <tr className="Space">
 							    <td className="pageM">WP-B ยกเว้นเบี้ยประกันภัยหลัก</td>
-							    <td className="page2">1,000,000</td>
-							    <td className="page2">0</td>
+							    <td className="page2">{this.state.wpd}</td>
+							    <td className="page2">{this.state.wpd2}</td>
 							  </tr>
 							  
 							  <tr className="Space">
 							    <td className="pageM"><b>รวมเบี้ยประกันสัญญาเพิ่ม</b></td>
 							    <td className="page2"></td>
-							    <td className="page2"><b>15,200</b></td>
+							    <td className="page2"><b>{this.state.total}</b></td>
 							  </tr>
 						</table>
 						<div className = "total">เบี้ยประกันรวมทั้งหมด
-							<div className = "totalsum"><b>935,200</b>บาท</div>
+							<div className = "totalsum"><b>{this.state.alltotal}</b>บาท</div>
 						</div>
 		  		</div>
 			

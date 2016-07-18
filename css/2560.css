@@ -3,7 +3,8 @@
   color:#0096a9; display:inline-block;
 }
 .totalsum{
-  display:inline-block; float:right; margin-right:100px;
+  display:inline-block; float:right; margin-right:250px;
+  font-size: 18px;
 }
 .morepromise{
   display:inline-block; width:83%; vertical-align: middle;

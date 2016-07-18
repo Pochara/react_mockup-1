@@ -21039,10 +21039,28 @@
 	var InfoTab2 = function (_Component3) {
 		_inherits(InfoTab2, _Component3);
 
-		function InfoTab2() {
+		function InfoTab2(props) {
 			_classCallCheck(this, InfoTab2);
 
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(InfoTab2).apply(this, arguments));
+			var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(InfoTab2).call(this, props));
+
+			_this3.state = {
+				life: "",
+				life2: "",
+				insurance: "",
+				insurance2: "",
+				solution: "",
+				solution2: "",
+				ain: "",
+				ain2: "",
+				opd: "",
+				opd2: "",
+				wpd: "",
+				wpd2: "",
+				total: "",
+				alltotal: ""
+			};
+			return _this3;
 		}
 
 		_createClass(InfoTab2, [{
@@ -21050,27 +21068,37 @@
 			value: function componentDidMount() {
 				if (this.props.information === "1") {
 					this.setState({
-						title: "นางสาว",
-						name: "อาทิมา",
-						lastname: "อิทธิโรจนกุล",
-						paper: "บัตรประชาชน",
-						id: "9-999-999999x-xx-x",
-						otherpaper: "-",
-						status: "แต่งงานแล้ว",
-						weight: "80 กิโลกรัม",
-						height: "160 เซ็นติเมตร"
+						life: "1,000,000",
+						life2: "10,000",
+						insurance: "5,000,000",
+						insurance2: "2,200",
+						solution: "1,000,000",
+						solution2: "900,000",
+						ain: "250,000",
+						ain2: "2,000",
+						opd: "300,000",
+						opd2: "3,000",
+						wpd: "1,000,000",
+						wpd2: "0",
+						total: "15,200",
+						alltotal: "935,200"
 					});
 				} else {
 					this.setState({
-						title: "นาย",
-						name: "สมศักดิ์",
-						lastname: "สวนสวัสดิ์",
-						paper: "บัตรประชาชน",
-						id: "9-999-999999x-xx-x",
-						otherpaper: "-",
-						status: "โสด",
-						weight: "65 กิโลกรัม",
-						height: "175 เซ็นติเมตร"
+						life: "2,000,000",
+						life2: "20,000",
+						insurance: "7,000,000",
+						insurance2: "4,200",
+						solution: "2,000,000",
+						solution2: "500,000",
+						ain: "420,000",
+						ain2: "1,000",
+						opd: "420,000",
+						opd2: "2,000",
+						wpd: "2,000,000",
+						wpd2: "0",
+						total: "42,200",
+						alltotal: "1,404,200"
 					});
 				}
 			}
@@ -21127,12 +21155,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'1,000,000'
+								this.state.life
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'10,000'
+								this.state.life2
 							)
 						),
 						_react2.default.createElement(
@@ -21146,12 +21174,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'5,000,000'
+								this.state.insurance
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'2,200'
+								this.state.insurance2
 							)
 						),
 						_react2.default.createElement(
@@ -21165,12 +21193,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'1,000,000'
+								this.state.solution
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'900,000'
+								this.state.solution2
 							)
 						)
 					),
@@ -21198,12 +21226,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'250,000'
+								this.state.ain
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'2,000'
+								this.state.ain2
 							)
 						),
 						_react2.default.createElement(
@@ -21217,12 +21245,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'300,000'
+								this.state.opd
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'3,000'
+								this.state.opd2
 							)
 						),
 						_react2.default.createElement(
@@ -21236,12 +21264,12 @@
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'1,000,000'
+								this.state.wpd
 							),
 							_react2.default.createElement(
 								'td',
 								{ className: 'page2' },
-								'0'
+								this.state.wpd2
 							)
 						),
 						_react2.default.createElement(
@@ -21263,7 +21291,7 @@
 								_react2.default.createElement(
 									'b',
 									null,
-									'15,200'
+									this.state.total
 								)
 							)
 						)
@@ -21278,7 +21306,7 @@
 							_react2.default.createElement(
 								'b',
 								null,
-								'935,200'
+								this.state.alltotal
 							),
 							'บาท'
 						)
@@ -40954,7 +40982,7 @@
 
 
 	// module
-	exports.push([module.id, "/* The Modal (background) */\r\n.divinline{\r\n  color:#0096a9; display:inline-block;\r\n}\r\n.totalsum{\r\n  display:inline-block; float:right; margin-right:100px;\r\n}\r\n.morepromise{\r\n  display:inline-block; width:83%; vertical-align: middle;\r\n}\r\n.morepromisehr{\r\n  border:0.5px solid #D7DADA;\r\n}\r\n.logobottom{\r\n  width:50px; height:35px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.iconright{\r\n  font-size:25px; color:#778b96; margin-right:30px;\r\n}\r\n.modal-container {\r\n  position: relative;\r\n}\r\n.selectpage1{\r\n  margin-left: 5px;border-right: 0px;\r\n}\r\n.width100{\r\n  width:100%;\r\n}\r\n.none{\r\n  display: none\r\n}\r\n.imagetab{\r\n  width:22px; height:22px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.logo{\r\n  width:100px; height:30px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.line{\r\n  border-bottom: 2.5px solid black; width:60%;  margin-bottom:18px; \r\n}\r\n.calendar{\r\n  font-size:15px; margin-left:15px;\r\n}\r\n.aligncenter{\r\n  text-align:center;\r\n}\r\n.EQTOP{\r\n  text-align:center; margin-top:0px;\r\n}\r\n.eqlogo{\r\n  width:110px; height:35px; vertical-align: text-top; margin-right:5px; margin-top: 5px; margin-bottom:0px;\r\n}\r\n.divshowbtn{\r\n\tmargin-top: 500px;\r\n\ttext-align: center;\r\n}\r\n.header{\r\n    position:relative;\r\n   \tleft:0px;\r\n   \ttop:0px;\r\n   \theight:55px;\r\n   \twidth:100%;\r\n   \tbackground:#032a39;\r\n}\r\n.iconsearch{\r\n\tfont-size: 20px;\r\n}\r\n.headerTab{\r\n\tcursor: pointer;\r\n\tmargin-top: 15px;\r\n\theight: 68%;\r\n\tmargin-right: 15px;\r\n\tdisplay: inline-block;\r\n}\r\n.headerActive{\r\n\tcolor:#6e895b;\r\n\tborder-bottom: 4px solid #3C7E89;\r\n}\r\n.headerLeft{\r\n\tmargin-top: 14px;\r\n\tmargin-left:20px;\r\n\tdisplay: inline-block;\r\n}\r\n.headerRight{\r\n\tdisplay: inline-block;\r\n\tfont-weight: bold;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tcolor:white;\r\n\tfont-size: 15px;\r\n\tright: 80px;\r\n}\r\n.EQ{\r\n\tposition: relative;\r\n\tmargin-top:0px;\r\n\theight: 130px;\r\n\twidth: 100%;\r\n\tbackground-color: #F7F7F7;\r\n}\r\n.EQbtn1{\r\n\tborder:0px;\r\n\twidth: 15%;\r\n  margin-right: 10px;\r\n\tbackground-color: #0095a9;\r\n\tcolor:white;\r\n\tdisplay: inline-block;\r\n  \tfont-size: 15px;\r\n    padding: 10px 5px 12px 5px;\r\n }\r\n .EQbtn2{\r\n\tborder:0px;\r\n \twidth: 15%;\r\n  margin-left: 10px;\r\n\tbackground-color: #d4d611;\r\n\tcolor:white;\r\n\tdisplay: inline-block;\r\n  \tfont-size: 15px;\r\n    padding: 10px 5px 12px 5px;\r\n }\r\n .EQSearch{\r\n \tdisplay:inline-block; \r\n \twidth:65%; \r\n \tborder:1px solid #D5D5D5; \r\n \tbackground-color:white;\r\n }\r\ntextarea:focus, input:focus{\r\n    outline: none;\r\n}\r\n .input{\r\n \tdisplay: inline-block;\r\n \twidth: 67%;\r\n \tfont-size: 15px;\r\n \theight: 40px;\r\n \tborder: 0px;\r\n \tmargin-left: 5px;\r\n \tborder-right: 1px solid #ddd;\r\n }\r\n  .input2{\r\n \tdisplay: inline-block;\r\n \twidth: 18%;\r\n \tfont-size: 15px;\r\n \theight: 40px;\r\n \tborder: 0px;\r\n \tmargin-left: 10px;\r\n }\r\n\r\n.showbtn{\r\n  \tfont-size: 20px;\r\n  \tpadding: 10px 45px 10px 45px;\r\n}\r\n.testscroll{\r\n\tmargin-top: 1000px;\r\n}\r\n.footer{\t\r\n    position: relative;\r\n    display: inline-block;\r\n   \tleft:0px;\r\n   \tbottom:0px;\r\n   \theight:50px;\r\n   \twidth:100%;\r\n   \tbackground:#032a39;\r\n}\r\n.footerLeft{\r\n\tdisplay: inline-block;\r\n\tposition: absolute;\r\n\tmargin-top:15px;\r\n\tmargin-left: 30px;\r\n\tcolor:white;\r\n\tfont-size: 14px;\r\n}\r\n.footerRight{\r\n\tposition: absolute;\r\n\tright:25px;\r\n\ttop:15px;\r\n}\r\n.footerCenter{\r\n\tposition: relative;\r\n\ttext-align: center;\r\n\tmargin-top: 10px;\r\n}\r\n\r\n@media screen and (max-width: 2560px) {\r\n\r\nbody { font-family: 'THNiramitAS', sans-serif; background-color: blue; margin:0px;} \r\n\r\ntable{\r\n     border-collapse: collapse; \r\n}\r\ntr.border_bottom td {\r\n  border-bottom:1pt solid #D7DADA;\r\n}\r\ntr.border_bottom2 td {\r\n\r\n  border-bottom:1pt solid #D7DADA;\r\n}\r\ntd.page1{\r\n    width:60%;\r\n    font-size: 13px;\r\n    padding-top: 10px;\r\n    padding-bottom: 5px;\r\n}\r\ntd.page1M{\r\n    width:40%;\r\n    font-size: 13px;\r\n    padding-top: 10px;\r\n    padding-bottom: 5px;\r\n}\r\ntd.pageMchild{\r\n    color:#0096a9;\r\n    width: 50%;\r\n    padding-left: 13px;\r\n    font-size: 13px;\r\n    padding-top: 0px;\r\n    padding-bottom: 2px;  \r\n}\r\ntd.pageM{\r\n    width: 50%;\r\n    padding-left: 13px;\r\n    font-size: 13px;\r\n    padding-top: 0px;\r\n    padding-bottom: 2px;\r\n}\r\ntd.page2{\r\n    width: 25%;\r\n    font-size: 13px;\r\n    padding-top: 15px;\r\n    padding-bottom: 2px;\r\n}\r\n.center{\r\n\twidth: 100%;\r\n    padding-left: 15px;\r\n    font-size: 13px;\r\n    padding-top: 2px;\r\n    padding-bottom: 5px;\r\n}\r\n.wrapper {\r\n  left:50%;\r\n  margin-top:500px;\r\n  position: fixed;\r\n  width: 100%;\r\n}\r\n\r\n.button {\r\n    position:relative;\r\n}\r\n\r\n\r\n.head {\r\n    list-style-type: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow: hidden;\r\n    background-color: #FFFFFF;\r\n}\r\n.information{\r\n    width: 80%;\r\n    margin: auto;\r\n    margin-top: 15px;\r\n}\r\n.selecthead {\r\n\r\n    margin: auto;\r\n    margin-top: 20px;\r\n    padding: 0;\r\n    width: 80%;\r\n    background-color: #FFFFFF;\r\n}\r\n\r\n.select{\r\n    border:1px solid #0096a9;\r\n    width: 49%;\r\n    text-align: center;\r\n    float: left;\r\n}\r\n.select a {\r\n    cursor: pointer;\r\n    display: block;\r\n    color: #0096a9;\r\n    font-size: 14px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n}\r\n\r\n.select a:hover:not(.active) {\r\n    color:#FFFFFF;\r\n    background-color: #0096a9;\r\n}\r\n\r\n.tab a {\r\n    font-weight: 700;\r\n    display: block;\r\n    color: #000;\r\n    font-size: 16px;\r\n    text-align: center;\r\n    padding: 8px 10px;\r\n    text-decoration: none;\r\n}\r\n\r\n.tab a:hover:not(.active) {\r\n    background-color: #FFFFFF;\r\n}\r\n.tab{\r\n    cursor: pointer;\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.total{\r\n\tbackground-color:#5c5a5d; \r\n\tcolor:white; \r\n\tfont-size:15px; \r\n\tpadding-top:5px; \r\n\tpadding-left:15px;\r\n}\r\n\r\n.active {\r\n    background-color: #EAEAEA;\r\n}\r\n.active2 a{\r\n    color:#FFFFFF!important;\r\n}\r\n.active2{\r\n    background-color: #0096a9;\r\n}\r\n.parent{\r\n  font-size: 0;\r\n    /* parent value */\r\n}\r\n\r\n.parent > div{\r\n  display: inline-block;\r\n  width: 50%;\r\n  font-size: 16px;\r\n   /* some value */\r\n}\r\n.city{\r\n  min-height: 90%;\r\n  /* equal to footer height */\r\n  margin-bottom: -70px; \r\n}\r\n.city2{\r\n  min-height: 90%;\r\n  /* equal to footer height */\r\n  margin-bottom: -80px; \r\n}\r\n\r\n#information2{display:none;}\r\n.modal {\r\n    margin: 0;\r\n    display: none; /* Hidden by default */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Sit on top */\r\n    padding-top: 100px; /* Location of the box */\r\n    left: 0;\r\n    top: 0;\r\n    width: 100%; /* Full width */\r\n    height: 100%; /* Full height */\r\n    overflow: auto; /* Enable scroll if needed */\r\n    background-color: rgb(0,0,0); /* Fallback color */\r\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\r\n}\r\n.modal-lg{\r\n\r\n  border: 1px solid #888;\r\n  margin: auto;\r\n  width: 65%;\r\n  height: 680px;\r\n}\r\n/* Modal Content */\r\n.modal-content {\r\n    background-color: #FFFFFF;\r\n    margin: auto;\r\n    border: 1px solid #888;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n/* The Close Button */\r\n.close {\r\n    color: #aaaaaa;\r\n    float: right;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n}\r\n\r\n.close:hover,\r\n.close:focus {\r\n    color: #000;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.btn {\r\n  background: #0096a9;\r\n  color: #ffffff;\r\n  font-size: 15px;\r\n  padding: 8px 35px 8px 35px;\r\n  text-decoration: none;\r\n  position: fixed;\r\n}\r\n\r\n.btn:hover {\r\n  background: #0096a9;\r\n  text-decoration: none;\r\n}\r\n\r\n}", ""]);
+	exports.push([module.id, "/* The Modal (background) */\r\n.divinline{\r\n  color:#0096a9; display:inline-block;\r\n}\r\n.totalsum{\r\n  display:inline-block; float:right; margin-right:250px;\r\n  font-size: 18px;\r\n}\r\n.morepromise{\r\n  display:inline-block; width:83%; vertical-align: middle;\r\n}\r\n.morepromisehr{\r\n  border:0.5px solid #D7DADA;\r\n}\r\n.logobottom{\r\n  width:50px; height:35px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.iconright{\r\n  font-size:25px; color:#778b96; margin-right:30px;\r\n}\r\n.modal-container {\r\n  position: relative;\r\n}\r\n.selectpage1{\r\n  margin-left: 5px;border-right: 0px;\r\n}\r\n.width100{\r\n  width:100%;\r\n}\r\n.none{\r\n  display: none\r\n}\r\n.imagetab{\r\n  width:22px; height:22px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.logo{\r\n  width:100px; height:30px; vertical-align: text-top; margin-right:5px;\r\n}\r\n.line{\r\n  border-bottom: 2.5px solid black; width:60%;  margin-bottom:18px; \r\n}\r\n.calendar{\r\n  font-size:15px; margin-left:15px;\r\n}\r\n.aligncenter{\r\n  text-align:center;\r\n}\r\n.EQTOP{\r\n  text-align:center; margin-top:0px;\r\n}\r\n.eqlogo{\r\n  width:110px; height:35px; vertical-align: text-top; margin-right:5px; margin-top: 5px; margin-bottom:0px;\r\n}\r\n.divshowbtn{\r\n\tmargin-top: 500px;\r\n\ttext-align: center;\r\n}\r\n.header{\r\n    position:relative;\r\n   \tleft:0px;\r\n   \ttop:0px;\r\n   \theight:55px;\r\n   \twidth:100%;\r\n   \tbackground:#032a39;\r\n}\r\n.iconsearch{\r\n\tfont-size: 20px;\r\n}\r\n.headerTab{\r\n\tcursor: pointer;\r\n\tmargin-top: 15px;\r\n\theight: 68%;\r\n\tmargin-right: 15px;\r\n\tdisplay: inline-block;\r\n}\r\n.headerActive{\r\n\tcolor:#6e895b;\r\n\tborder-bottom: 4px solid #3C7E89;\r\n}\r\n.headerLeft{\r\n\tmargin-top: 14px;\r\n\tmargin-left:20px;\r\n\tdisplay: inline-block;\r\n}\r\n.headerRight{\r\n\tdisplay: inline-block;\r\n\tfont-weight: bold;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tcolor:white;\r\n\tfont-size: 15px;\r\n\tright: 80px;\r\n}\r\n.EQ{\r\n\tposition: relative;\r\n\tmargin-top:0px;\r\n\theight: 130px;\r\n\twidth: 100%;\r\n\tbackground-color: #F7F7F7;\r\n}\r\n.EQbtn1{\r\n\tborder:0px;\r\n\twidth: 15%;\r\n  margin-right: 10px;\r\n\tbackground-color: #0095a9;\r\n\tcolor:white;\r\n\tdisplay: inline-block;\r\n  \tfont-size: 15px;\r\n    padding: 10px 5px 12px 5px;\r\n }\r\n .EQbtn2{\r\n\tborder:0px;\r\n \twidth: 15%;\r\n  margin-left: 10px;\r\n\tbackground-color: #d4d611;\r\n\tcolor:white;\r\n\tdisplay: inline-block;\r\n  \tfont-size: 15px;\r\n    padding: 10px 5px 12px 5px;\r\n }\r\n .EQSearch{\r\n \tdisplay:inline-block; \r\n \twidth:65%; \r\n \tborder:1px solid #D5D5D5; \r\n \tbackground-color:white;\r\n }\r\ntextarea:focus, input:focus{\r\n    outline: none;\r\n}\r\n .input{\r\n \tdisplay: inline-block;\r\n \twidth: 67%;\r\n \tfont-size: 15px;\r\n \theight: 40px;\r\n \tborder: 0px;\r\n \tmargin-left: 5px;\r\n \tborder-right: 1px solid #ddd;\r\n }\r\n  .input2{\r\n \tdisplay: inline-block;\r\n \twidth: 18%;\r\n \tfont-size: 15px;\r\n \theight: 40px;\r\n \tborder: 0px;\r\n \tmargin-left: 10px;\r\n }\r\n\r\n.showbtn{\r\n  \tfont-size: 20px;\r\n  \tpadding: 10px 45px 10px 45px;\r\n}\r\n.testscroll{\r\n\tmargin-top: 1000px;\r\n}\r\n.footer{\t\r\n    position: relative;\r\n    display: inline-block;\r\n   \tleft:0px;\r\n   \tbottom:0px;\r\n   \theight:50px;\r\n   \twidth:100%;\r\n   \tbackground:#032a39;\r\n}\r\n.footerLeft{\r\n\tdisplay: inline-block;\r\n\tposition: absolute;\r\n\tmargin-top:15px;\r\n\tmargin-left: 30px;\r\n\tcolor:white;\r\n\tfont-size: 14px;\r\n}\r\n.footerRight{\r\n\tposition: absolute;\r\n\tright:25px;\r\n\ttop:15px;\r\n}\r\n.footerCenter{\r\n\tposition: relative;\r\n\ttext-align: center;\r\n\tmargin-top: 10px;\r\n}\r\n\r\n@media screen and (max-width: 2560px) {\r\n\r\nbody { font-family: 'THNiramitAS', sans-serif; background-color: blue; margin:0px;} \r\n\r\ntable{\r\n     border-collapse: collapse; \r\n}\r\ntr.border_bottom td {\r\n  border-bottom:1pt solid #D7DADA;\r\n}\r\ntr.border_bottom2 td {\r\n\r\n  border-bottom:1pt solid #D7DADA;\r\n}\r\ntd.page1{\r\n    width:60%;\r\n    font-size: 13px;\r\n    padding-top: 10px;\r\n    padding-bottom: 5px;\r\n}\r\ntd.page1M{\r\n    width:40%;\r\n    font-size: 13px;\r\n    padding-top: 10px;\r\n    padding-bottom: 5px;\r\n}\r\ntd.pageMchild{\r\n    color:#0096a9;\r\n    width: 50%;\r\n    padding-left: 13px;\r\n    font-size: 13px;\r\n    padding-top: 0px;\r\n    padding-bottom: 2px;  \r\n}\r\ntd.pageM{\r\n    width: 50%;\r\n    padding-left: 13px;\r\n    font-size: 13px;\r\n    padding-top: 0px;\r\n    padding-bottom: 2px;\r\n}\r\ntd.page2{\r\n    width: 25%;\r\n    font-size: 13px;\r\n    padding-top: 15px;\r\n    padding-bottom: 2px;\r\n}\r\n.center{\r\n\twidth: 100%;\r\n    padding-left: 15px;\r\n    font-size: 13px;\r\n    padding-top: 2px;\r\n    padding-bottom: 5px;\r\n}\r\n.wrapper {\r\n  left:50%;\r\n  margin-top:500px;\r\n  position: fixed;\r\n  width: 100%;\r\n}\r\n\r\n.button {\r\n    position:relative;\r\n}\r\n\r\n\r\n.head {\r\n    list-style-type: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow: hidden;\r\n    background-color: #FFFFFF;\r\n}\r\n.information{\r\n    width: 80%;\r\n    margin: auto;\r\n    margin-top: 15px;\r\n}\r\n.selecthead {\r\n\r\n    margin: auto;\r\n    margin-top: 20px;\r\n    padding: 0;\r\n    width: 80%;\r\n    background-color: #FFFFFF;\r\n}\r\n\r\n.select{\r\n    border:1px solid #0096a9;\r\n    width: 49%;\r\n    text-align: center;\r\n    float: left;\r\n}\r\n.select a {\r\n    cursor: pointer;\r\n    display: block;\r\n    color: #0096a9;\r\n    font-size: 14px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n}\r\n\r\n.select a:hover:not(.active) {\r\n    color:#FFFFFF;\r\n    background-color: #0096a9;\r\n}\r\n\r\n.tab a {\r\n    font-weight: 700;\r\n    display: block;\r\n    color: #000;\r\n    font-size: 16px;\r\n    text-align: center;\r\n    padding: 8px 10px;\r\n    text-decoration: none;\r\n}\r\n\r\n.tab a:hover:not(.active) {\r\n    background-color: #FFFFFF;\r\n}\r\n.tab{\r\n    cursor: pointer;\r\n    width: 50%;\r\n    display: inline-block;\r\n}\r\n.total{\r\n\tbackground-color:#5c5a5d; \r\n\tcolor:white; \r\n\tfont-size:15px; \r\n\tpadding-top:5px; \r\n\tpadding-left:15px;\r\n}\r\n\r\n.active {\r\n    background-color: #EAEAEA;\r\n}\r\n.active2 a{\r\n    color:#FFFFFF!important;\r\n}\r\n.active2{\r\n    background-color: #0096a9;\r\n}\r\n.parent{\r\n  font-size: 0;\r\n    /* parent value */\r\n}\r\n\r\n.parent > div{\r\n  display: inline-block;\r\n  width: 50%;\r\n  font-size: 16px;\r\n   /* some value */\r\n}\r\n.city{\r\n  min-height: 90%;\r\n  /* equal to footer height */\r\n  margin-bottom: -70px; \r\n}\r\n.city2{\r\n  min-height: 90%;\r\n  /* equal to footer height */\r\n  margin-bottom: -80px; \r\n}\r\n\r\n#information2{display:none;}\r\n.modal {\r\n    margin: 0;\r\n    display: none; /* Hidden by default */\r\n    position: fixed; /* Stay in place */\r\n    z-index: 1; /* Sit on top */\r\n    padding-top: 100px; /* Location of the box */\r\n    left: 0;\r\n    top: 0;\r\n    width: 100%; /* Full width */\r\n    height: 100%; /* Full height */\r\n    overflow: auto; /* Enable scroll if needed */\r\n    background-color: rgb(0,0,0); /* Fallback color */\r\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\r\n}\r\n.modal-lg{\r\n\r\n  border: 1px solid #888;\r\n  margin: auto;\r\n  width: 65%;\r\n  height: 680px;\r\n}\r\n/* Modal Content */\r\n.modal-content {\r\n    background-color: #FFFFFF;\r\n    margin: auto;\r\n    border: 1px solid #888;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n/* The Close Button */\r\n.close {\r\n    color: #aaaaaa;\r\n    float: right;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n}\r\n\r\n.close:hover,\r\n.close:focus {\r\n    color: #000;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.btn {\r\n  background: #0096a9;\r\n  color: #ffffff;\r\n  font-size: 15px;\r\n  padding: 8px 35px 8px 35px;\r\n  text-decoration: none;\r\n  position: fixed;\r\n}\r\n\r\n.btn:hover {\r\n  background: #0096a9;\r\n  text-decoration: none;\r\n}\r\n\r\n}", ""]);
 
 	// exports
 
