@@ -19,7 +19,6 @@
 }
 .modal-container {
   position: relative;
-  width:;
 }
 .selectpage1{
   margin-left: 5px;border-right: 0px;
@@ -235,15 +234,14 @@ td.page2{
     padding-bottom: 5px;
 }
 .wrapper {
-    margin-top: 100px;
-    position: relative;
-    width: 100%;
-    text-align: center;
+  left:50%;
+  margin-top:500px;
+  position: fixed;
+  width: 100%;
 }
 
 .button {
     position:relative;
-    bottom:0;
 }
 
 
@@ -365,7 +363,7 @@ td.page2{
   border: 1px solid #888;
   margin: auto;
   width: 65%;
-  height: 85%;
+  height: 680px;
 }
 /* Modal Content */
 .modal-content {
@@ -397,6 +395,7 @@ td.page2{
   font-size: 15px;
   padding: 8px 35px 8px 35px;
   text-decoration: none;
+  position: fixed;
 }
 
 .btn:hover {

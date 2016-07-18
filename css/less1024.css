@@ -106,9 +106,10 @@ td.page2{
     padding-bottom: 5px;
 }
 .wrapper {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  left:45%;
+  margin-top:400px;
+  position: fixed;
+  width: 100%;
 }
 
 .button {
@@ -234,7 +235,7 @@ td.page2{
   border: 1px solid #888;
   margin: auto;
   width: 520px;
-  height: 70%;
+  height: 500px;
 }
 /* Modal Content */
 .modal-content {
